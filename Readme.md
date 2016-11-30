@@ -12,10 +12,10 @@ Use the following HTML markup to bring the Lync Presence. <br/>
 Initiate the lync presence in script `lync.init();` <br/>
 You don't need to call the init() twice for lync status and face pile! The function will take care of that.
 You can pass certain properties for facepile
-{
-	visible: number_of_faces_to_be_displayed_in_facepile,
-	moreFace: function_call_back_on_click_of_more
-}
+`{<br/>
+	visible: number_of_faces_to_be_displayed_in_facepile,<br/>
+	moreFace: function_call_back_on_click_of_more<br/>
+}`<br/>
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
