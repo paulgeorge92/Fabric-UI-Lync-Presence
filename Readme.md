@@ -9,13 +9,13 @@ Bring Lync Presence and status text in HTML pages
 ## Usage
 Use the following HTML markup to bring the Lync Presence. <br/>
 &lt;div class="lync-status" data-sip="sip_address" data-name="Name_of_the_User" data-title="title" data-image="image_url""&gt;&lt;/div&gt;<br/>
-Initiate the lync presence in script `lync.init();` <br/>
-You don't need to call the init() twice for lync status and face pile! The function will take care of that.
-You can pass certain properties for facepile
-`{<br/>
-	visible: number_of_faces_to_be_displayed_in_facepile,<br/>
-	moreFace: function_call_back_on_click_of_more<br/>
-}`<br/>
+Initiate the lync presence in script `lync.init();`__
+You don't need to call the init() twice for lync status and face pile! The function will take care of that.__
+You can pass certain properties for facepile__
+`{__
+	visible: number_of_faces_to_be_displayed_in_facepile,__
+	moreFace: function_call_back_on_click_of_more__
+}`__
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
