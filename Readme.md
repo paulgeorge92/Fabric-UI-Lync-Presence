@@ -9,9 +9,9 @@ Bring Lync Presence and status text in HTML pages
 ## Usage
 Use the following HTML markup to bring the Lync Presence. 
 
-&lt;div class="lync-status" data-sip="sip_address" data-name="Name_of_the_User" data-title="title" data-image="image_url""&gt;&lt;/div&gt;
+&lt;div class="lync-status" data-sip="sip_address" data-name="Name_of_the_User" data-title="title" data-image="image_url"&gt;&lt;/div&gt;
 
-&lt;div class="facepile" data-sip="sip_address" data-name="Name_of_the_User" data-image="image_url""&gt;&lt;/div&gt;
+&lt;div class="facepile" data-sip="sip_address" data-name="Name_of_the_User" data-image="image_url"&gt;&lt;/div&gt;
 
 Initiate the lync presence in script `lync.init();`  
 
