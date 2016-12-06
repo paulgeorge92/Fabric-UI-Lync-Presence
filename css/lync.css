@@ -1,121 +1,75 @@
 .lync-persona {
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    padding: 5px 10px;
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	padding: 5px 10px;
 }
-.face-pile{
+.face-pile {
 	display: inline-block;
 	width: 50px;
 }
 .round {
-    display: inline-block;
-    width: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    background: #ddd;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
-    font-family: Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+	display: inline-block;
+	width: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	background: #ddd;
+	text-align: center;
+	vertical-align: top;
+	cursor: pointer;
+	font-family: Segoe UI WestEuropean, Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
-
-
 .ms-Persona.ms-Persona--lg {
-    width: auto;
-    height: 80px;
+	width: auto;
+	height: 80px;
 }
-
 .ms-Persona-primaryText,
 .ms-Persona-secondaryText {
-    display: inline;
+	display: inline;
 }
-
-.ms-Persona-presence{
+.ms-Persona-presence {
+	background-size: 21px;
+}
+.lync-persona .ms-Persona--lg.ms-Persona .ms-Persona-presence{
+	background-position-x: -3px;
+	background-position-y: -2px;
 	bottom: 5px;
+	width: 15px;
+	height: 15px;
+}
+.face-pile .ms-Persona-presence {
+	background-position-x: -5px;
+	background-position-y: -4px;
 }
 
 .ms-Persona.ms-Persona--ooo .ms-Persona-presence {
-    background-image: url(../images/lync/ooo.png);
-    background-size: 100%;
+	background-image: url(data:image/png;base64,data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAC7UlEQVQ4T5WVb2jVVRjHP8/ZvV4398cNl61wqK3tXvqzmAsCXwxpBGGbE0KpFyaVLVyEBb0piztxEQimskV3bQwEkfy/OzMIWTAKLCVWNG4aamPRaMW1uXW3ud3zyLnzXrfp3PV59eOc5/s553fO83yPcJcIEjSlFBVk4S01aEAhz6UJDFskEmPy0iUGo0GCdq5c5g4c4rP8HBZtAmrBlAMPCOJ1eYpOAkOC9CoaNowffYHt12YyZgGP07Y2A6k3yIuCZE5DEjtLxOxvHQP90jL1eR31PyShKeAJWqsy8DQKrBXEk0xwkPl2oDCp2O9Agxt4vefWsUAXoWLF+ylQJ4i527nON6aotchJ0HfqeHVAQoS8RXh3CvJRSmQgc8USxvr/T5utxHcNEt8txwj5fXgOgnk6qV72XBHZ/qX8cSCSNhDs+QmmtkiY9q2CaQGynDq3ogD/xxXErozy6/Zz9wEkptgG6aS92WAanNL3UGYC9vDLqxn+KcrQ6YEFgWN/xvjryFVsLI7FtkgX7Z1gasUjlLz/JI+89zie7ETZpRXR74e4sLGbG/+Mu8IKO2A3mHX5zxRSGX4WX+HitEDJpDnAb6WLjtPAeuMzlDVVsOqtAMaXkTZ0NpCv3KWEBPOGI2Q9mkNgTyUP1hQzEvmPaM/fC4Jjl0fob71IfGTKtWaru5Q3BdkniM+pC6qWE/hkDdd/uUbfjh8XBLp+tONxB5tQdIecoL3cgxwWJJBUF21eSbY/j98bf14YeCtD0YigL0kHHYsLsE0G826qwb3CkpJcRiPDaQMtdm8U80HCHLoI+WHRfqAauK9eBmwce1bg7Q28djHlNp20rQfTJPBEugbhjEHRXsV+WMe2Mym3Sf7XKdpqBGkQqBbMPWtH0bjCN0q8OQm7A+gGwnyxSjGvCOZ5QctAEvZ/O3RY4TdFv57AHtzEtqszZ+94Atyks7RleFd4kKfAPqZI7vTqeh1M3xTa+y+TA/XUuydhVtwEaT0M1SewLOQAAAAASUVORK5CYII=);
+	background-size: 100%;
 }
 
 .ms-Persona.ms-Persona--available .ms-Persona-presence {
-    background-image: url(../images/lync/available.png);
-    background-size: 21px;
-    background-position-x: -1px;
-    background-position-y: 0;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAC8klEQVQ4T42Ua0iTURjH/+82d3FXdXmZuZlaCy2yeybYjS4oCwosFCpWuE9iV/pilEX1qQ/WNzWSiow0irIiAi0kTcqwsM1LzuV9M9F5W3O6nXi3ttzNeT69nOf5/87/eZ9zHgpBVt/kD4NuvA6d5gaMWgfhIHNgUGGQcuOhlGQhNWIP5KI1K3zllO/GxOxIS7OxemOTqQp9U98x65jxO5LD4EMuTEdmbD62xuR+FXOiN7mTvIDGmW7yuvcWGo2PYLVPBTPv2ecxRdgem48cxXnE8lc6WR7gxKxp7Kn+SsSHoXuwE1tImDuBSbGxQ6ZGbtK1cTE3JtIDfNt7h1Tri5fkzPc0LlOII8k3cEBRRDmBg9PtpEyrRvdk85Kd+SamiLZBk1bpKrl+oII86DwNm8MSEshh8CBiL8OEbQg2x7wnn80Ix3HlbRfwrk5D6gfLQ8KErCjsTyjE6ohMvDCUoG28yUuzO14DamJ25GW57pSqdbTWDyhgCeEg87DY/0DAikSO4hz2JhTCZOlCZbsG3VPfvDQbpCpQY9ZBQ5lWndg29s4ryGfxcSjxIngsERqG7yNdmot9TthPPO+5ipbRWhAfC+lR2W6HJ1Wto6+8wjwmB3kpN7Ezvggmiw5SXjKGZzqCwmjxetoh/VGhLSDvhyr8SpbzU3E46TLWSVUwWjrwTF8S0JlbuEtW4ALW9ZeTh11nAnZZFp4CpTgDv60GaMc/+pXphtFdPraq1AUcmNKSMp0a+snPATtNgQECx6K3IFm0BZrUf/eQznzzq5TU6IsDDoNQ94keFrnJ15GdeNb1UuhlthpJjf6Ss6N2MheK4YkzqTBkxZ1wAiXc2P9AOmNoutM5bT6ZHsNqnw4J5TIFyIjJQ47iAmQCpfe0Wei02fQEjcYq9E+3BWwU3YAEwVrn6MqIOep05tb7DVh3gG5Up7kRPZNfYLYNw0EcYFAMSNhxSBJthlKSieXCND99UODCeunnSYHICag+MSf64GL/4i+RaSSKYkjtTQAAAABJRU5ErkJggg==);
 }
 
 .ms-Persona.ms-Persona--away .ms-Persona-presence {
-    background-image: url(../images/lync/away.png);
-    background-size: 21px;
-    background-position-x: -1px;
-    background-position-y: 0;
+	background-image: url(data:image/png;base64,data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACA0lEQVQ4T6WVS2gTURSGv5s00cQYa20SH1WCbnUl7hQUEVy6KC7EZXXR6KIKtiIE6jMuXEnsUnClKPiA1o0Irq2PRRelFEPRpuahMG3aNNPUU/KaZtKZEeOshpn7f/ecc8/5r8LhkeXpFKUpKOdABFybwRsF7/4x5Q3HrKTK6qMsfRG011AYAz0FUqovU+DuAt9h2NYLnacPKNX5rZmxASi/nwi/klD8BJTt43fvgGAvdF9G+Q4aHBNQ8iNCLgErMy0gF/DHAu6C4BmI3DSgBlC0UWHuKuiTZuGmQxA4CYV3UJqwgLph+wXoSVTTrwJlJZ9g9tIg809bBG4IDUD4NmRuQP6BdQkq6e96iOo6p2pA7Y3wow9Wsy0CD0TiELoO2VuQHbavafAs7Hl0qgZMDwn5+5W39oGeKOx7gRI9m2T2Yj8Lryx2/4cIXVuh53EFmE7x/XyUxffOwNxdyMTtU1ZbYHfyb8AO6L4CO+/A4gf4OQTFcWvoOtApZcB3BCL3IHAcFkYhMwzLnzdCGyk7H0pd5z8K4TgEToD2HOYGoJwxQxuH4tw2TRr/MQhdA9UB6RjophEGU9tUGzs2yPwzJ/MBz15QftCngdX1ta2NXYvSZvSctwAsRq+hsTcHO6qDORjQqn2NQPHj/9uXAV36KmgvofC2VnzR67/aMNjm5Nq5AtYAxgTiMULGUEoAAAAASUVORK5CYII=);
 }
 
 .ms-Persona.ms-Persona--dnd .ms-Persona-presence {
-    background-image: url(../images/lync/dnd.png);
-    background-size: 21px;
-    background-position-x: -1px;
-    background-position-y: 0;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACQ0lEQVQ4T6WUXUiTURjHf6dNk7qpZUpFRBkUFGlpNcPKIAi6zq6aH9EuYjNpFQViBsWUEjHaJLrNuijFyvUB0UVRSKiVwiLDmC3LWoQFFqSwJ959+u4jR52r9z3nPL/zfz4VaZY8H/Dx6Cn0vYTAN5Ag5OTA2gIoL4Od5h8qP68o0Vwlboh/TLjeDV0eGH4HU1PJT+aaoHwbWCpQe3bpGLofGfQKLe1w6wFMT6cTH99fUwD2gyirJcaJfcj7MaGhGTo9EAzODoveWL4UGo+jDuwLseJAZ5vQ7Ert4mz4LRvhkhNVuE6FgDIwJFgd8PrtbKapz7OMcKoWVX80Amy7IjSeh98pEpDpEyWF0NEedlkq7cKNO8mmBkNqnEhynBcthKtulIwHhOpaeNyrN95cBGVbITtLv6/BPn6G2/dh8lf8bP48cDWhZOyTYLFDb3/8cG42nLBBnRUMc5JVjoxCTR14h/XAi+c0hV+EqiPwJEGheRNsL02jcBy67sLkzwSFzkgMLTbhZs//xdC0ADrcEWDrZeFMy7/VYFRG8Qa4Fs1y/yvhkAPejGRaJPp7RiOctKMaHOE6DJXO2VbhghumMujhxGe1inBpnbJ+BtDnF+qboPseaKWR6Vq2BE4fQ1Xt1/dySOWLofC08TzMTOnqlWCrQR2uTp42MddH/eF52NkDI77UYC2jO0qhsgK1d3f6eTjTS9ES9awPBr0w8R2CAlrBr1oBpcVgLplQ+YtNiZFJmtipQieBr5FGVx9UXq7tb+H9A2XtzYrO4ZvdAAAAAElFTkSuQmCC);
 }
 
 .ms-Persona.ms-Persona--busy .ms-Persona-presence {
-    background-image: url(../images/lync/busy.png);
-    background-size: 21px;
-    background-position-x: -1px;
-    background-position-y: 0;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACF0lEQVQ4T52UXUgUURTHfze3NeylzJSKiDIoKNtCC40ogyDoOXtq1SIfwjVoCwrEDIpVSsTIleg166EMI5cIooeikPCDFJQKw1yWPlyoXtvFPbEz664zO9vONE8zd879nf/5n3uPIscj78bivHwDI+MQ/QkJgRWFsL0cag/Aoeq4KistMm9X5gUJR4QHg/A4BB8/QyyWnbKkGGr3g7cOdfSwgWH4kIkpoasPnjyHeDyX+Mz6tnLwnUY1edOc9IvMRYS2ThgIQSKRH7YYsXE9tF9EnTyusTLAQI/Q2WtdYj78vj1wO4Dy7FAaUMYmhSY/TH/Kt9X6/3IXXG5BtZ5PAXvuCu034I9FA+ymqPJAf59estT7hIdP7W61jluzGu4FUfJtXmhsgVfDxkC325mfK4ugtwMlka+C1wfDoxlgQQEsLDhTnATeup5U+ENoOAevTQqd4UBTGEh56G0WHg05RRjji1dBfzAF7L4jXO1y5pk5feUuuL/Y5dH3whk/fJj5P5UuF1zyodr8+jnUjs61buFmEGI27rA57d7dun+enUuAs2GhtQMGn4GIfaUb1sGVC6iGE8a7rKkcn9SnTeiFPaVbN0PzKdTZxuxpky79S1ifhwNDMDNrDU529GAN1Nehjh3JPQ+X1inJRr0dgYkp+PVbn9iFbtiyCWoqobpKVNnaZWZvsia2lXkyH/2ur6uoKi2p+JfBfwFZ9bOKSLCZmwAAAABJRU5ErkJggg==);
 }
 
 .ms-Persona.ms-Persona--offline .ms-Persona-presence {
-    background-image: url(../images/lync/offline.png);
-    background-size: 21px;
-    background-position-x: -1px;
-    background-position-y: 0;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABKklEQVQ4T7WVTVLCQBSEu5Ow5wbmCDkCLFyLCxeu9AJW5ATACRDjXlxZJVSpa6HIEXKEeIPsSdJWYkUhYpWQsZfz883rN2/eEDs0fly5TivzkONIpGsR7WJZLiSUYlh4T9d21D/vxvXt3BwYP6/aTpp6gnVCqAPQBT5hG0oAxQJDIn9NHSfqn3aTav4LWMDsdd4jeQHI2wGqB5MAjCQ9ZC3rpYKWwG+YfIAFbA8pkjipoCUwmL11AHuA0uYhYghko6uz45DFBdhO7hO4/IPN305LBEyz1JowmC96EAb7W62zFYEYMXha+CCHDaKryAmkIW9nyzGB60My9yNG4IZ38+W9VOavsUhMzQONWzZ+KcbLxnhhG396/9IctqEG2ldV0UYb7FbnbvAFfACwac3vdoXMQgAAAABJRU5ErkJggg==);
 }
+
 
 .ms-Persona-optionalText,
 .ms-Persona-secondaryText,
 .ms-Persona-tertiaryText {
-    color: #333;
-}
-.face-pile .ms-Persona.ms-Persona--ooo .ms-Persona-presence {
-    background-image: url(../images/lync/ooo.png);
-    background-size: 100%;
-}
-
-.face-pile .ms-Persona.ms-Persona--available .ms-Persona-presence {
-    background-image: url(../images/lync/available.png);
-    background-size: 21px;
-    background-position-x: -5px;
-    background-position-y: -4px;
-}
-
-.face-pile .ms-Persona.ms-Persona--away .ms-Persona-presence {
-    background-image: url(../images/lync/away.png);
-    background-size: 21px;
-    background-position-x: -5px;
-    background-position-y: -4px;
-}
-
-.face-pile .ms-Persona.ms-Persona--dnd .ms-Persona-presence {
-    background-image: url(../images/lync/dnd.png);
-    background-size: 21px;
-    background-position-x: -5px;
-    background-position-y: -4px;
-}
-
-.face-pile .ms-Persona.ms-Persona--busy .ms-Persona-presence {
-    background-image: url(../images/lync/busy.png);
-    background-size: 21px;
-    background-position-x: -5px;
-    background-position-y: -4px;
-}
-
-.face-pile .ms-Persona.ms-Persona--offline .ms-Persona-presence {
-    background-image: url(../images/lync/offline.png);
-    background-size: 21px;
-    background-position-x: -5px;
-    background-position-y: -4px;
+	color: #333;
 }
