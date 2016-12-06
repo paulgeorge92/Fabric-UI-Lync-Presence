@@ -19,11 +19,10 @@ You don't need to call the init() twice for lync status and face pile! The funct
 
 You can pass certain properties for   
 
-`
-	visible: number_of_faces_to_be_displayed_in_facepile,
+`visible: number_of_faces_to_be_displayed_in_facepile,`
 
-	moreFace: function_call_back_on_click_of_more 
-`
+`moreFace: function_call_back_on_click_of_more`
+
 
 ## Contributing
 1. Fork it!
